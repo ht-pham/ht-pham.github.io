@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    
+    <link rel="shortcut icon" type="image/jpg" href=""/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lalezar&display=swap" rel="stylesheet">
@@ -20,29 +20,34 @@
     
     <script type="text/javascript" src="contact.js"></script>
     <title>Hannah Pham | Software Engineer </title>
-
+    <style>
+        body {
+            background-color:  #1D3557;
+            color: #F1FAEE;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="container-fluid navbar navbar-expand-lg sticky-lg-top" style="background-color: #1D3557;" role="navigation">
+    <nav class="container-fluid navbar navbar-expand-lg shadow-lg sticky-lg-top p-3 mb-5" style="background-color:#1D3557;" role="navigation">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" role="navigation" >
                 <span class=""><i class="fa fa-bars" aria-hidden="true" style="color:#F1FAEE;"></i></span>
             </button>
-            <a class="navbar-brand" href="#aboutme" style="font-family:'Lalezar';font-size:x-large;color:#F1FAEE;">
+            <a class="navbar-brand" href="#introduction" style="font-family:'Lalezar';font-size:x-large;color:#F1FAEE;">
                 Hannah Pham <span style="font-family:'Cookie';font-style:italic;font-size:large;">est 1996</span>
             </a>
-            <div class="collapse navbar-collapse" id="navbarNav" >
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
                 <ul class="navbar-nav mr-auto mb-2 mb-lg-0" >
                     <li class="nav-item" role="navigation">
-                        <a class="nav-link active" aria-current="page" href="#aboutme" style="color:#F1FAEE;" >About Me</a>
+                        <a class="nav-link active" aria-current="page" href="#aboutme" style="color:#F1FAEE;" ><span style="color:#08F7FE;">1. </span>About Me</a>
                     </li>
                     <li class="nav-item" role="navigation">
-                        <a class="nav-link" href="#projects" style="color:#F1FAEE;" >Projects</a>
+                        <a class="nav-link" href="#projects" style="color:#F1FAEE;" ><span style="color:#08F7FE;">2. </span>Projects</a>
                     </li>
                     <li class="nav-item" role="navigation">
-                        <a class="nav-link" href="#contactme" style="color:#F1FAEE;" >Contact Me</a>
+                        <a class="nav-link" href="#contactme" style="color:#F1FAEE;" ><span style="color:#08F7FE;">3. </span>Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -50,61 +55,85 @@
         </div>
     </nav><!-- End of Navigation bar-->
     
-    
-    <section class="aboutme container-fluid" >
+    <section id="introduction" class="container-fluid">
+        <div class="container-fluid">
+            <figure class="col-10 m-5">
+                <blockquote class="blockquote introduction greetings m-0" style="font-family:'Lalezar'">
+                    <p class="mb-0 mt-5" style="color:#08F7FE;">
+                        Hello, World! My name is </p>
+                    <h1 class="mb-0" style="font-family:'Lalezar';font-size:300%;"> Hannah Pham.</h1>
+                    <h2 class="mb-0" style="font-family:'Lalezar';font-size:300%;"> Fresh Constructor, Original Programmer.</h2>
+                    <h3 class="mb-0" style="font-family:'Lalezar';font-size:200%;color:#ABAC9F;">Creating apps one step at a time.</h3> 
+                </blockquote>
+            </figure>
+            <figure class="introduction summary col-9">
+                <blockquote class="blockquote introduction summary">
+                    <p class="m-5">
+                        I'm an inspired Software Engineer with behavior-driven development mindset and an interest in learning and building automation tools.<br>
+                        Currently looking for new opportunities in software development. Open to relocate in US. <br>
+                        Besides coding, I enjoy building DIY projects or going hiking when it is Fall season. <br>
+                    </p>
+                </blockquote>
+            </figure>
+            <figure class="col-8 m-5" style="height:100px;">
+                <button id="contact-shortcut" type="button" class="btn btn-outline-info" style="border-color:#08F7FE;">
+                    <a href="#contactme" style="text-decoration:none;color:#08F7FE;">Contact me</a>
+                </button>
+            </figure>
+        </div>
+    </section>
+    <section class="aboutme container-fluid mt-5" >
         <div id="aboutme" class="container-fluid">
-          <!-- <h2>About Me</h2> -->
-          <div class="aboutme-content">
-            <div class="img">
-              <div class="aboutme-image"></div>
-            </div>
-            <div class="aboutme-text">
-                <p style="font-family:'Lalezar';margin-bottom: 0;">
-                    Hello, World! My name is </p>
-                <h1 style="font-family:'Lalezar';font-size:300%;margin-bottom: 0;"> Hannah Pham.</h1>
-                <h2 style="font-family:'Lalezar';font-size:200%;margin-bottom: 0;"> Fresh Constructor, Original Programmer.</h2>
-                <h3 style="font-family:'Lalezar';font-size:150%;padding-top: 0;">Creating apps one step at a time.</h3> 
-                <p>
-                    I am a Fall'22 graduate in MSc. Computer Science with a concentration on Software Engineering from the University of Texas at San Antonio. 
-                    I am looking for new opportunities in software development. I am proficient in Python, Java and C. 
-                    I am also familiar with FlaskAPI, MySQL, Docker and GCP services like Google AppEngine, Firestore NoSQL database, or Google Cloud Build. 
-                    Prior to the graduate program, I received a Bachelor’s degree in Computer Science from Catholic University of America in Washington, D.C in 2018.
+          <h2 style="font-family:'Lalezar';font-size:200%;margin-bottom: 0;">About me</h2>
+            <div class="row aboutme-content justify-content-between">
+            
+                <div class="col-sm-4 col-md-6 col-lg-8 aboutme-text">
+                    <p>
+                        I am a Fall'22 graduate in MSc. Computer Science with a concentration on Software Engineering from the University of Texas at San Antonio. 
+                        I am looking for new opportunities in software development. I am proficient in Python, Java and C. 
+                        I am also familiar with FlaskAPI, MySQL, Docker and GCP services like Google AppEngine, Firestore NoSQL database, or Google Cloud Build. 
+                        Prior to the graduate program, I received a Bachelor’s degree in Computer Science from Catholic University of America in Washington, D.C in 2018.
+                    </p>
+                <p>Technical skills:
+                    <ul>
+                        <li>Backend: Python , Java, C </li>
+                        <li>Frontend: HTML, CSS, JavaScript </li>
+                        <li>Framework: FlaskAPI, JUnit, Bootstrap 5</li>
+                        <li>Cloud: GCP services (AppEngine, Firestore, Cloud Build)</li>
+                        <li>Others: SQL, Linux, Git, Docker, Matlab </li>
+                    </ul>
                 </p>
-              <p>Technical skills:
-                <ul>
-                    <li>Backend: Python , Java, C </li>
-                    <li>Frontend: HTML, CSS, JavaScript </li>
-                    <li>Framework: FlaskAPI, Bootstrap 5</li>
-                    <li>Cloud: GCP services (AppEngine, Firestore, Cloud Build)</li>
-                    <li>Others: SQL, Linux, Git, Docker, Matlab </li>
-                </ul>
-              </p>
-              <p>Theoretical knowledge:
-                <ul>
-                    <li>Object-oriented programming (IT068 @ VNU IU) </li>
-                    <li>Data Structures & Algorithms (IT013 @ VNU IU; CS5633 - Analysis of Algorithm) </li>
-                    <li> Software Development/Agile Methodology ( CSC 363 - Software Engineering @CUA; CS5103 [grad] - Software Engineering @UTSA; CS5153 - User Interfaces & Usability @UTSA) </li>
-                    <li>Cloud computing/Internet of Things (ENGR 544 Internet of Things @ CUA) </li>
-                    <li>Operating Systems ( CSC 306 @ CUA, CS5523 @UTSA) </li>
-                    <li>Computer & Network security (CSC 426, CSC 565 @ CUA, CS 5713 @ UTSA) </li>
-                    <li>Others: Robotics, Pattern Recognition ( CSC 476, CSC 551 @ CUA) </li>
-                </ul>
-              </p>
+                <p>Theoretical knowledge:
+                    <ul>
+                        <li>Object-oriented programming (IT068 @ VNU IU) </li>
+                        <li>Data Structures & Algorithms (IT013 @ VNU IU; CS5633 - Analysis of Algorithm) </li>
+                        <li> Software Development/Agile Methodology ( CSC 363 - Software Engineering @CUA; CS5103 [grad] - Software Engineering @UTSA; CS5153 - User Interfaces & Usability @UTSA) </li>
+                        <li>Cloud computing/Internet of Things (ENGR 544 Internet of Things @ CUA) </li>
+                        <li>Operating Systems ( CSC 306 @ CUA, CS5523 @UTSA) </li>
+                        <li>Computer & Network security (CSC 426, CSC 565 @ CUA, CS 5713 @ UTSA) </li>
+                        <li>Others: Robotics, Pattern Recognition ( CSC 476, CSC 551 @ CUA) </li>
+                    </ul>
+                </p>
+                </div>
+                <figure class="figure col-sm-4 col-md-3 col-lg-3 ">
+                    <img src="images/after-stage.jpeg" class="figure-img img-fluid rounded" alt="graduation" 
+                        style="box-shadow: 15px 15px 0px #F1FAEE, -15px -15px 0px  #08F7FE;">
+                </figure>
             </div>
-          </div>
         </div>
     </section><!-- End of About me section-->
 
     
-    <section class="projects container-fluid">
+    <section class="projects container-fluid mt-5">
         <div class="container-fluid">
-            <h2 id="projects">Projects</h2>
+            <!-- <h2 id="projects">Projects</h2> -->
+            <h2 id="projects" style="font-family:'Lalezar';font-size:200%;margin-bottom: 0;"> What I have been building...</h2>
             <div class="row d-flex flex-row justify-content-center">
                 <div class="col-sm-4 col-md-3 col-lg-3 m-3 card text-center grocery-api" >
                     <div class="card-img-top">
                         <img src="images/grocery-api.png" alt="grocery-api" style="width:100%;max-height:fit-content">
                     </div>
-                    <div class="card-body" >
+                    <div class="card-body" style="color:#1D3557;" >
                         <h3 class="card-title">Grocery Items REST API</h3>
                         <p class="card-text">A RESTful API built by Flask for storing and retrieving grocery products from a theoretical online grocery store.
                         </p>
@@ -122,7 +151,7 @@
                     <div class="card-img-top">
                         <img src="images/webweather.png" alt="WebWeather" style="width:100%;max-height: fit-content;">
                     </div>
-                    <div class="card-body" >
+                    <div class="card-body" style="color:#1D3557;">
                         <h3 class="card-title">WebWeather</h3>
                         <p class="card-text">This is a web application built by Flask framework and WeatherAPI,
                             authenticated with Google Firestore for data storing and statistics,
@@ -210,10 +239,10 @@
         });
     </script> -->
 
-    <footer class="container-fluid" style="max-height:fit-content; width: 100%;background-color: #1D3557;">
+    <footer class="container-fluid mt-5" style="max-height:fit-content; width: 100%;background-color: #1D3557;">
         <div class="container-fluid row p-sm-1 p-md-2 p-lg-3" style="color:#F1FAEE;">
-            <h2 id="contactme" >What's next?</h2>
-            <p class="p-1 col-md-9" >
+            <h2 id="contactme">What's next?</h2>
+            <p class="p-1 col-10" >
             @Developers: Interested in collaborating? Wanna know more what else I have been working on? Feel free to check out my GitHub account! <br>
             @Recruiters: Feel free to reach out to me about relevant job opportunities through my LinkedIn!
             </p>
