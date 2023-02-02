@@ -26,10 +26,22 @@
             background-color:  #1D3557;
             color: #F1FAEE;
         }
-        ul li::before {
-            list-style: '&#x2713';
-            color: red;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
+        ul li:hover{
+            color: #08F7FE;
+        }
+        .skillset li::before {
+            content: ">>";
+            font-size: 10px;
+            vertical-align: 20%;
+            padding-right: 5px;
+            text-decoration-line: none;
+        }
+
     </style>
 </head>
 
@@ -100,7 +112,7 @@
                         Prior to the graduate program, I received a Bachelor’s degree in Computer Science from Catholic University of America in Washington, D.C in 2018.
                     </p>
                     <p>Technical skills:
-                        <ul>
+                        <ul class="skillset">
                             <li>Backend: Python , Java, C </li>
                             <li>Frontend: HTML, CSS, JavaScript </li>
                             <li>Framework: FlaskAPI, JUnit, Bootstrap 5</li>
@@ -109,7 +121,7 @@
                         </ul>
                     </p>
                     <p>Theoretical knowledge:
-                        <ul>
+                        <ul class="skillset">
                             <li>Object-oriented programming</li>
                             <li>Data Structures & Algorithms </li>
                             <li>Software Development/Agile Methodology </li>
